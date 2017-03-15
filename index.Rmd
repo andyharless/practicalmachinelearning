@@ -7,9 +7,13 @@ output:
     keep_md: yes
 ---
 
+#Practical Machine Learning Course Project
+
+
 ##Backgound
 
 As described in [this paper](http://groupware.les.inf.puc-rio.br/public/papers/2013.Velloso.QAR-WLE.pdf), Velloso, Bulling, Gellersen, Ugulino, and Fuks built a dataset of body sensor data for weight lifting exercises performed in various ways.  Weight lifters were asked to perform the exercise either correctly (label A) or with one of four specific common incorrect variations (labels B, C, D, and E).  The objective of this study is to predict the labels based on the sensor data in their data set.
+
 
 ##Initial Data Processing
 
