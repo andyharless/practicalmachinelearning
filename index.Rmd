@@ -112,7 +112,7 @@ However, it's not really fair to compare an alternative procedure with the best 
 Here is the preliminary test set performance of the combined model (using fits that include the validation data):
 
 ```{r}
-print(confuse_voted_1stpass)
+print(confuse_voted_2ndpass)
 ```
 
 Compare the performance of the Random Forest model alone:
