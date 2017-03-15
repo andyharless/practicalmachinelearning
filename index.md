@@ -2,15 +2,15 @@
 Andy Harless  
 March 14, 2017  
 
-#Practical Machine Learning Course Project
+# Human Activity Recognition: Weight Lifting
 
 
-##Backgound
+## Backgound
 
 As described in [this paper](http://groupware.les.inf.puc-rio.br/public/papers/2013.Velloso.QAR-WLE.pdf), Velloso, Bulling, Gellersen, Ugulino, and Fuks built a dataset of body sensor data for weight lifting exercises performed in various ways.  Weight lifters were asked to perform the exercise either correctly (label A) or with one of four specific common incorrect variations (labels B, C, D, and E).  The objective of this study is to predict the labels based on the sensor data in their data set.
 
 
-##Initial Data Processing
+## Initial Data Processing
 
 Many of the columns in the data set refer to summary statistics which are available only once for each data collection window.  These statistics are also not present in the test cases provided for this course and thus would not be useful for this study.  Accordingly I deleted those columns from the training set.  Once those columns were deleted, there were only three pieces of data missing, and I deleted the cases that contained them.  The resulting set of training data had 19621 labelled observations of 52 potential predictor variables.  Lacking any particular substantive knowledge of the material, I decided, at least as a first cut, to use all 52 predictors without any feature-specific preprocessing.  For fitting purposes, I preprocessed all variables using the Box-Cox procedure, as performed via the Caret R package.
 
