@@ -1,0 +1,107 @@
+
+Parsed with column specification:
+cols(
+  .default = col_double(),
+  X1 = col_integer(),
+  user_name = col_character(),
+  raw_timestamp_part_1 = col_integer(),
+  raw_timestamp_part_2 = col_integer(),
+  cvtd_timestamp = col_character(),
+  new_window = col_character(),
+  num_window = col_integer(),
+  total_accel_belt = col_integer(),
+  kurtosis_roll_belt = col_character(),
+  kurtosis_picth_belt = col_character(),
+  kurtosis_yaw_belt = col_character(),
+  skewness_roll_belt = col_character(),
+  skewness_roll_belt.1 = col_character(),
+  skewness_yaw_belt = col_character(),
+  max_picth_belt = col_integer(),
+  max_yaw_belt = col_character(),
+  min_pitch_belt = col_integer(),
+  min_yaw_belt = col_character(),
+  amplitude_pitch_belt = col_integer(),
+  amplitude_yaw_belt = col_character()
+  # ... with 46 more columns
+)
+See spec(...) for full column specifications.
+Warning: 185 parsing failures.
+ row               col expected  actual
+2231 kurtosis_roll_arm a double #DIV/0!
+2231 skewness_roll_arm a double #DIV/0!
+2255 kurtosis_roll_arm a double #DIV/0!
+2255 skewness_roll_arm a double #DIV/0!
+2282 kurtosis_roll_arm a double #DIV/0!
+.... ................. ........ .......
+See problems(...) for more details.
+
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: foreach
+foreach: simple, scalable parallel programming from Revolution Analytics
+Use Revolution R for scalability, fault tolerance and more.
+http://www.revolutionanalytics.com
+Loading required package: iterators
+Loading required package: MASS
+Loading required package: klaR
+Loading required package: randomForest
+randomForest 4.6-12
+Type rfNews() to see new features/changes/bug fixes.
+
+Attaching package: ‘randomForest’
+
+The following object is masked from ‘package:ggplot2’:
+
+    margin
+
+Loading required package: nnet
+Loading required package: adabag
+Loading required package: rpart
+Loading required package: mlbench
+Loading required package: plyr
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: kknn
+
+Attaching package: ‘kknn’
+
+The following object is masked from ‘package:caret’:
+
+    contr.dummy
+
+Parsed with column specification:
+cols(
+  .default = col_character(),
+  X1 = col_integer(),
+  raw_timestamp_part_1 = col_integer(),
+  raw_timestamp_part_2 = col_integer(),
+  num_window = col_integer(),
+  roll_belt = col_double(),
+  pitch_belt = col_double(),
+  yaw_belt = col_double(),
+  total_accel_belt = col_integer(),
+  gyros_belt_x = col_double(),
+  gyros_belt_y = col_double(),
+  gyros_belt_z = col_double(),
+  accel_belt_x = col_integer(),
+  accel_belt_y = col_integer(),
+  accel_belt_z = col_integer(),
+  magnet_belt_x = col_integer(),
+  magnet_belt_y = col_integer(),
+  magnet_belt_z = col_integer(),
+  roll_arm = col_double(),
+  pitch_arm = col_double(),
+  yaw_arm = col_double()
+  # ... with 37 more columns
+)
+See spec(...) for full column specifications.
+
+Warning messages:
+1: Missing column names filled in: 'X1' [1] 
+2: Missing column names filled in: 'X1' [1] 
